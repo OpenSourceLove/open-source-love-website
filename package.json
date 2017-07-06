@@ -17,14 +17,40 @@
     "extends": "eslint-config-synacor"
   },
   "devDependencies": {
-    "eslint": "^4.1.1",
+    "babel-eslint": "7.2.3",
+    "babel-jest": "20.0.3",
+    "babel-loader": "7.0.0",
+    "babel-plugin-dynamic-import-node": "1.0.2",
+    "babel-plugin-lodash": "3.2.11",
+    "babel-plugin-syntax-dynamic-import": "6.18.0",
+    "babel-plugin-transform-class-properties": "6.24.1",
+    "babel-plugin-transform-es2015-modules-commonjs": "6.24.1",
+    "babel-plugin-transform-object-rest-spread": "6.23.0",
+    "babel-preset-env": "1.5.2",
+    "babel-preset-react": "6.24.1",
+    "babel-preset-react-optimize": "1.0.1",
+    "eslint": "3.19.0",
+    "eslint-config-airbnb": "15.0.1",
+    "eslint-config-airbnb-base": "11.2.0",
+    "eslint-config-prettier": "2.1.1",
     "eslint-config-synacor": "^1.0.1",
+    "eslint-plugin-compat": "1.0.3",
+    "eslint-plugin-flowtype": "2.34.0",
+    "eslint-plugin-import": "2.3.0",
+    "eslint-plugin-jest": "20.0.3",
+    "eslint-plugin-jsx-a11y": "5.0.3",
+    "eslint-plugin-prettier": "2.1.1",
+    "eslint-plugin-react": "7.0.1",
     "if-env": "^1.0.0",
-    "preact-cli": "^1.3.0"
+    "preact-cli": "^1.3.0",
+    "prettier": "1.4.4"
   },
   "dependencies": {
+    "postcss-cssnext": "^3.0.0",
+    "postcss-smart-import": "^0.7.4",
     "preact": "^8.1.0",
     "preact-compat": "^3.16.0",
-    "preact-router": "^2.5.2"
+    "preact-router": "^2.5.2",
+    "styled-components": "^2.1.1"
   }
 }
