@@ -46,11 +46,13 @@
     "prettier": "1.4.4"
   },
   "dependencies": {
-    "postcss-cssnext": "^3.0.0",
-    "postcss-smart-import": "^0.7.4",
+    "axios": "^0.16.2",
+    "hi-base64": "^0.2.1",
     "preact": "^8.1.0",
     "preact-compat": "^3.16.0",
+    "preact-markup": "^1.6.0",
     "preact-router": "^2.5.2",
+    "react-markdown": "^2.5.0",
     "styled-components": "^2.1.1"
   }
 }
