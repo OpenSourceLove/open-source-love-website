@@ -16,7 +16,6 @@ export default class Profile extends Component {
     );
   }
 
-  // Note: `user` comes from the URL, courtesy of our router
   render({ developer, repo }, { info, loading }) {
     return (
       <div className={style.profile}>
@@ -25,6 +24,17 @@ export default class Profile extends Component {
             <h1>Profile: {repo}</h1>
             <p>This is the user profile for a user named {developer}.</p>
             <ReactMarkdown source={info.readme} />
+            <ul>
+              {info.comments &&
+                info.comments.map(comment =>
+                  <li key={comment.date}>
+                    <strong>{comment.name}</strong>
+                    <p>{comment.message}</p>
+                  </li>
+                )}
+
+              {!info.comments && <p>Show {repo} some love !</p>}
+            </ul>
           </div>}
       </div>
     );

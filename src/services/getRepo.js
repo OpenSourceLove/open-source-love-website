@@ -1,5 +1,6 @@
 import axios from 'axios';
 import base64 from 'hi-base64';
+import getCommments from './comments';
 
 const getData = (developer, repo) =>
   axios(`https://api.github.com/repos/${developer}/${repo}`).then(
@@ -15,10 +16,18 @@ const getRepo = (developer, repo) =>
   axios
     .all([getReadme(developer, repo), getData(developer, repo)])
     .then(
-      axios.spread((readme, data) => ({
-        readme: base64.decode(readme.content),
-        ...data,
-      }))
+      axios.spread((readme, data) =>
+        getCommments(developer, repo)
+          .then(comments => ({
+            readme: base64.decode(readme.content),
+            ...data,
+            comments,
+          }))
+          .catch(() => ({
+            readme: base64.decode(readme.content),
+            ...data,
+          }))
+      )
     )
     .catch(
       axios
