@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="62px" height="56px" viewBox="0 0 62 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.1 (43504) - http://www.bohemiancoding.com/sketch -->
+    <title>Logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="93.5341521%" y1="50%" x2="2.93461186%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#E2574C" offset="0%"></stop>
+            <stop stop-color="#CB4E44" offset="44.8620855%"></stop>
+            <stop stop-color="#CB4E44" offset="100%"></stop>
+        </linearGradient>
+        <path d="M32.3716595,33.695743 C34.8775112,32.6993808 36.3405675,29.99344 35.8513719,27.2599717 C35.3621763,24.5265033 33.0599462,22.5434096 30.3757804,22.5434096 C27.6916146,22.5434096 25.3893845,24.5265033 24.9001889,27.2599717 C24.4109933,29.99344 25.8740496,32.6993808 28.3799013,33.695743 L24.628717,43.8192934 C17.4114652,40.9502237 13.1973213,33.1570904 14.6059727,25.2844299 C16.014624,17.4117695 22.6451673,11.7001484 30.3757804,11.7001484 C38.1063935,11.7001484 44.7369368,17.4117695 46.1455881,25.2844299 C47.5542395,33.1570904 43.3400956,40.9502237 36.1228438,43.8192934 L32.3716595,33.695743 Z" id="path-2"></path>
+        <filter x="-23.4%" y="-23.4%" width="146.8%" height="146.7%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="5" operator="erode" in="SourceAlpha" result="shadowSpreadInner1"></feMorphology>
+            <feGaussianBlur stdDeviation="3.5" in="shadowSpreadInner1" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.190840127 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-43.000000, -8.000000)">
+            <g id="navigation/dark/variant_1">
+                <g id="Logo" transform="translate(42.000000, 7.000000)">
+                    <g id="heart" transform="translate(1.674419, 1.156146)">
+                        <path d="M55.75554,5.55187153 C46.7159605,-3.8125832 37.7527215,0.279466418 30.5778116,6.95926189 C23.3991937,0.279466418 14.5105502,-3.88577654 5.39833828,5.55187153 C-1.7059022,12.9057686 -1.74014634,24.7235555 5.39833828,32.0379191 C30.4997262,55.4240934 30.4938371,55.3825268 30.4938371,55.3825268 C30.4938371,55.3825268 30.5300443,55.4595605 55.753577,32.0376932 C62.8959876,24.7233296 62.8597805,12.9057686 55.75554,5.55187153 Z" id="Shape" fill="#9E2222" fill-rule="nonzero"></path>
+                        <path d="M30.5813856,6.94825787 L30.5641545,55.316176 C30.9667958,54.9642154 33.9272777,52.301469 55.7588959,32.0266892 C62.8993436,24.7143587 62.8648813,12.8965718 55.7588959,5.54267475 C46.7193165,-3.82155408 37.7580405,0.270495546 30.5813856,6.94825787 Z" id="Shape" fill="#CB4E44" fill-rule="nonzero"></path>
+                        <g id="path3773" stroke-linejoin="round" fill-rule="nonzero">
+                            <use fill="#19535F" fill-rule="evenodd" xlink:href="#path-2"></use>
+                            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                            <path stroke="url(#linearGradient-1)" stroke-width="1" d="M32.1869202,33.2311234 C34.4696284,32.3234862 35.8069646,29.8500664 35.3591917,27.3480548 C34.9121396,24.8500707 32.8147352,23.0434096 30.3757804,23.0434096 C27.9368256,23.0434096 25.8394212,24.8500707 25.3923691,27.3480548 C24.9445962,29.8500664 26.2819324,32.3234862 28.5646406,33.2311234 L29.0184259,33.4115549 L24.9197034,44.473028 L24.4440117,44.2839265 C17.0036029,41.3261453 12.6637221,33.3004893 14.1137894,25.1963638 C15.5645772,17.0882114 22.3999496,11.2001484 30.3757804,11.2001484 C38.3516112,11.2001484 45.1869836,17.0882114 46.6377714,25.1963638 C48.0878387,33.3004893 43.7479579,41.3261453 36.3075491,44.2839265 L35.8318574,44.473028 L31.7331349,33.4115549 L32.1869202,33.2311234 Z"></path>
+                        </g>
+                    </g>
+                    <g id="Opensource" transform="translate(-19.906977, -23.315615)"></g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

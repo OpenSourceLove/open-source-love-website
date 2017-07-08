@@ -1,7 +1,9 @@
 import { h, Component } from 'preact';
 import ReactMarkdown from 'react-markdown';
+import { Repo } from './style';
 import getRepo from '../../services/getRepo';
-import style from './style.css';
+import Project from '../../components/project/index';
+import Contributors from '../../components/Contributors/index';
 
 export default class Profile extends Component {
   state = {
@@ -9,7 +11,6 @@ export default class Profile extends Component {
     loading: true,
   };
 
-  // gets called when this route is navigated to
   componentDidMount() {
     getRepo(this.props.developer, this.props.repo).then(info =>
       this.setState({ info, loading: false })
@@ -18,12 +19,11 @@ export default class Profile extends Component {
 
   render({ developer, repo }, { info, loading }) {
     return (
-      <div className={style.profile}>
+      <Repo>
         {!loading &&
-          <div>
-            <h1>Profile: {repo}</h1>
-            <p>This is the user profile for a user named {developer}.</p>
-            <ReactMarkdown source={info.readme} />
+          <div style={{ width: '100%' }}>
+            <Project project={info} />
+            <Contributors contributors={info.contribs} />
             <ul>
               {info.comments &&
                 info.comments.map(comment =>
@@ -36,7 +36,7 @@ export default class Profile extends Component {
               {!info.comments && <p>Show {repo} some love !</p>}
             </ul>
           </div>}
-      </div>
+      </Repo>
     );
   }
 }

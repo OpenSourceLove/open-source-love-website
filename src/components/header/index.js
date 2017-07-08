@@ -1,13 +1,18 @@
 import { h } from 'preact';
 import { Link } from 'preact-router/match';
-import style from './style.css';
+import logo from '../../assets/logo.svg';
+import { HeaderBar, TabLink } from './style';
 
 const Header = () =>
-  <header className={style.header}>
-    <h1>Open Source Love</h1>
+  <HeaderBar>
+    <img src={logo} alt="Open Source Love" />
     <nav>
-      <Link activeClassName={style.active} href="/">Home</Link>
+      <Link href="/"><TabLink>Home</TabLink></Link>
+      <Link href="/about"><TabLink>About</TabLink></Link>
+      <Link href="https://github.com/OpenSourceLove">
+        <TabLink>Github</TabLink>
+      </Link>
     </nav>
-  </header>;
+  </HeaderBar>;
 
 export default Header;

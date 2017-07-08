@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseUrl = 'https://opensourcelove.github.io/open-source-love-data/data/';
+const baseUrl = 'https://opensourcelove.github.io/open-source-love-data/';
 
 const getCommments = (developer, repo) =>
   axios
