@@ -51,6 +51,7 @@
   },
   "dependencies": {
     "axios": "^0.16.2",
+    "capitalize-it": "1.2.1",
     "hi-base64": "^0.2.1",
     "preact": "^8.1.0",
     "preact-compat": "^3.16.0",

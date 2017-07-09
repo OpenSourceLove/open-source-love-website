@@ -1,11 +1,9 @@
 import { h, Component } from 'preact';
 import ReactMarkdown from 'react-markdown';
 import { GoUnfold, GoFold } from 'react-icons/lib/go';
+import Capitalize from 'capitalize-it';
 import { ReadmeContainer, Helper } from './style';
 import theme from '../../theme';
-
-const capitalizeFirstLetter = string =>
-  string.charAt(0).toUpperCase() + string.slice(1);
 
 class Readme extends Component {
   constructor(props) {
@@ -27,7 +25,7 @@ class Readme extends Component {
   render({ readme, repo }) {
     return (
       <div>
-        <h3>What is {capitalizeFirstLetter(repo)}?</h3>
+        <h3>What is {Capitalize(repo)}?</h3>
         <ReadmeContainer open={this.state.open}>
           <ReactMarkdown source={readme} />
         </ReadmeContainer>
