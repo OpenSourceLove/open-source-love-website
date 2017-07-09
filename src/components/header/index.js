@@ -9,9 +9,13 @@ const Header = () =>
     <nav>
       <Link href="/"><TabLink>Home</TabLink></Link>
       <Link href="/about"><TabLink>About</TabLink></Link>
-      <Link href="https://github.com/OpenSourceLove">
+      <a
+        href="https://github.com/OpenSourceLove"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <TabLink>Github</TabLink>
-      </Link>
+      </a>
     </nav>
   </HeaderBar>;
 

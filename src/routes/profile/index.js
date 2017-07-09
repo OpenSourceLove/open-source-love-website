@@ -1,6 +1,5 @@
 import { h, Component } from 'preact';
-import ReactMarkdown from 'react-markdown';
-import { Repo } from './style';
+import { Repo, Main, Section } from './style';
 import getRepo from '../../services/getRepo';
 import Project from '../../components/project/index';
 import Contributors from '../../components/Contributors/index';
@@ -21,9 +20,11 @@ export default class Profile extends Component {
     return (
       <Repo>
         {!loading &&
-          <div style={{ width: '100%' }}>
-            <Project project={info} />
-            <Contributors contributors={info.contribs} />
+          <Main>
+            <Section>
+              <Project project={info} />
+              <Contributors contributors={info.contribs} />
+            </Section>
             <ul>
               {info.comments &&
                 info.comments.map(comment =>
@@ -35,7 +36,7 @@ export default class Profile extends Component {
 
               {!info.comments && <p>Show {repo} some love !</p>}
             </ul>
-          </div>}
+          </Main>}
       </Repo>
     );
   }

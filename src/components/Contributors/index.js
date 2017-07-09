@@ -1,8 +1,8 @@
 import { h } from 'preact';
-import { Repo } from './style';
+import { ContributorsContainer, ContributorAvatar } from './style';
 
 const Contributors = ({ contributors }) =>
-  <div>
+  <ContributorsContainer>
     <h3>Contributors</h3>
     {contributors.map(contributor =>
       <a
@@ -10,15 +10,13 @@ const Contributors = ({ contributors }) =>
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img
-          width="60"
-          height="60"
+        <ContributorAvatar
           src={contributor.author.avatar_url}
           alt={contributor.author.login}
         />
       </a>
     )}
 
-  </div>;
+  </ContributorsContainer>;
 
 export default Contributors;

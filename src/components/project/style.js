@@ -9,16 +9,28 @@ export const Info = styled.section`
 export const Section = styled.section`
   display: flex;
   flex-direction: column;
-  width: 100%;
+  flex-basis: 100%;
   flex-wrap: wrap;
+  flex-shrink: 0;
+
+  & > h3,
+  & img {
+    display: none;
+    @media(min-width: 768px) {
+      display: block;
+    }
+  }
 
   @media(min-width: 768px) {
-    width: 50%;
+    padding-right: ${theme.margins.three};
+    flex-basis: 60%;
   }
 `;
 
 export const ProjectInfo = styled.div`
-  padding-left: ${theme.margins.two};
+  @media(min-width: 768px) {
+      padding-left: ${theme.margins.two};
+  }
   & h1 {
     margin-top: 0;
     margin-bottom: ${theme.margins.half};

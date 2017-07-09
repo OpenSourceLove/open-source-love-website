@@ -10,3 +10,12 @@ export const Repo = styled.section`
 	align-items: space-between;
 	margin-top: ${theme.margins.four};
 `;
+
+export const Main = styled.main`
+  width: 100%;
+`;
+
+export const Section = styled.section`
+  display: flex;
+  flex-wrap: wrap;
+`;
