@@ -21,7 +21,6 @@
   },
   "devDependencies": {
     "babel-eslint": "7.2.3",
-    "babel-jest": "20.0.3",
     "babel-loader": "7.0.0",
     "babel-plugin-dynamic-import-node": "1.0.2",
     "babel-plugin-lodash": "3.2.11",
@@ -40,7 +39,6 @@
     "eslint-plugin-compat": "1.0.3",
     "eslint-plugin-flowtype": "2.34.0",
     "eslint-plugin-import": "2.3.0",
-    "eslint-plugin-jest": "20.0.3",
     "eslint-plugin-jsx-a11y": "5.0.3",
     "eslint-plugin-prettier": "2.1.1",
     "eslint-plugin-react": "7.0.1",
@@ -53,15 +51,12 @@
   },
   "dependencies": {
     "axios": "^0.16.2",
-    "github-api": "^3.0.0",
     "hi-base64": "^0.2.1",
     "preact": "^8.1.0",
     "preact-compat": "^3.16.0",
-    "preact-markup": "^1.6.0",
     "preact-router": "^2.5.2",
     "react-icons": "^2.2.5",
     "react-markdown": "^2.5.0",
-    "styled-components": "^2.1.1",
-    "styled-tools": "^0.1.4"
+    "styled-components": "^2.1.1"
   }
 }

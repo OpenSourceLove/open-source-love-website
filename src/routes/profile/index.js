@@ -3,6 +3,7 @@ import { Repo, Main, Section } from './style';
 import getRepo from '../../services/getRepo';
 import Project from '../../components/project/index';
 import Readme from '../../components/Readme/index';
+import Comments from '../../components/Comments/index';
 import Contributors from '../../components/Contributors/index';
 
 export default class Profile extends Component {
@@ -27,17 +28,7 @@ export default class Profile extends Component {
               <Contributors contributors={info.contribs} />
             </Section>
             <Readme readme={info.readme} repo={repo} />
-            <ul>
-              {info.comments &&
-                info.comments.map(comment =>
-                  <li key={comment.date}>
-                    <strong>{comment.name}</strong>
-                    <p>{comment.message}</p>
-                  </li>
-                )}
-
-              {!info.comments && <p>Show {repo} some love !</p>}
-            </ul>
+            <Comments comments={info.comments} repo={repo} />
           </Main>}
       </Repo>
     );

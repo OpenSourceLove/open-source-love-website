@@ -1,11 +1,11 @@
 {
-  "name": "Preact PWA",
-  "short_name": "Preact PWA",
+  "name": "Open Source Love",
+  "short_name": "Open Source Love",
   "start_url": "/",
   "display": "standalone",
   "orientation": "portrait",
-  "background_color": "#fff",
-  "theme_color": "#673ab8",
+  "background_color": "#FBFBFB",
+  "theme_color": "#CB4E44",
   "icons": [{
     "src": "/assets/icons/android-chrome-192x192.png",
     "type": "image/png",

@@ -3,15 +3,13 @@ module.exports = {
   "extends": [
     "airbnb",
     "plugin:flowtype/recommended",
-    "plugin:jest/recommended",
     "prettier",
     "prettier/react"
   ],
   "env": {
     "es6": true,
     "browser": true,
-    "node": true,
-    "jest/globals": true
+    "node": true
   },
   "parserOptions": {
     "ecmaFeatures": {
@@ -33,7 +31,6 @@ module.exports = {
     "import",
     "flowtype",
     "compat",
-    "jest",
     "prettier"
   ],
   "rules": {
