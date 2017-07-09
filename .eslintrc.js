@@ -38,6 +38,7 @@ module.exports = {
   ],
   "rules": {
     "jsx-a11y/no-static-element-interactions": 1,
+    "jsx-a11y/href-no-hash": 0,
     "react/prop-types": 0, // ADD FLOW
     "compat/compat": 2,
     "react/react-in-jsx-scope": 0,

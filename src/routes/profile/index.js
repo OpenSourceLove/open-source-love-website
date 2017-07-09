@@ -2,6 +2,7 @@ import { h, Component } from 'preact';
 import { Repo, Main, Section } from './style';
 import getRepo from '../../services/getRepo';
 import Project from '../../components/project/index';
+import Readme from '../../components/Readme/index';
 import Contributors from '../../components/Contributors/index';
 
 export default class Profile extends Component {
@@ -25,6 +26,7 @@ export default class Profile extends Component {
               <Project project={info} />
               <Contributors contributors={info.contribs} />
             </Section>
+            <Readme readme={info.readme} repo={repo} />
             <ul>
               {info.comments &&
                 info.comments.map(comment =>

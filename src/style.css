@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:300,400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
 
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 
@@ -84,16 +85,6 @@ hr {
   overflow: visible; /* 2 */
 }
 
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-
-pre {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
-}
-
 /* Text-level semantics
    ========================================================================== */
 
@@ -143,11 +134,14 @@ strong {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 
-code,
-kbd,
-samp {
-  font-family: monospace, monospace; /* 1 */
+pre {
   font-size: 1em; /* 2 */
+  background-color: #4A4A4A;
+  padding: 8px;
+  border-radius: 3px;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-family: 'Source Code Pro', monospace;
 }
 
 /**
