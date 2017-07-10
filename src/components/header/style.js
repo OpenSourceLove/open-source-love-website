@@ -12,11 +12,15 @@ export const HeaderBar = styled.header`
   padding-right: 0;
 `;
 
-export const TabLink = styled.span`
+export const HeaderLink = styled.span`
   font-weight: bold;
   letter-spacing: 0.6px;
   text-align: center;
   color: ${theme.colors.darkGray};
   text-transform: uppercase;
   padding-right: ${theme.margins.four};
+
+  & a {
+      color: ${theme.colors.darkGray};
+  }
 `;
