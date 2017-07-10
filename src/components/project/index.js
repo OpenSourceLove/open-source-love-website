@@ -6,7 +6,7 @@ import {
   GoEye,
   GoRepoForked,
 } from 'react-icons/lib/go';
-import Capitalize from 'capitalize-it';
+import upperFirst from 'lodash/upperFirst';
 import { Info, ProjectInfo, List, Section } from './style';
 import theme from '../../theme';
 
@@ -22,7 +22,7 @@ const Project = ({ project }) =>
       />
       <ProjectInfo>
         <h1>
-          {Capitalize(project.name)}     {' '}
+          {upperFirst(project.name)}     {' '}
           <a href={project.html_url} target="_blank" rel="noopener noreferrer">
             <GoMarkGithub {...theme.svgSize} />
           </a>
